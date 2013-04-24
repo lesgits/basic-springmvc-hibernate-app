@@ -5,7 +5,7 @@
   <groupId>com.octo.test</groupId>
   <artifactId>cyd_test</artifactId>
   <packaging>war</packaging>
-  <version>1.0</version>
+  <version>1.2</version>
   <name>CydTest</name>
 
   <properties>
@@ -131,4 +131,14 @@
       </plugin>
     </plugins>
   </build>
+
+  <distributionManagement>
+  <!-- Publish versioned releases here -->
+  <repository>
+    <id>nexuscw</id>
+    <name>Nexus Cloudwatt</name>
+    <url>https://nexus.pic4cloud.net/nexus/content/repositories/releases/</url>
+  </repository>
+
+</distributionManagement>
 </project>
