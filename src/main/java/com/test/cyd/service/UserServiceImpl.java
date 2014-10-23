@@ -19,8 +19,8 @@ public class UserServiceImpl {
   private SessionFactory sessionFactory;
 
   public User findByUsername(String username) {
-    //return (User) sessionFactory.getCurrentSession().get(User.class, username);
-    return (User) sessionFactory.getCurrentSession().get(User.class, "mysuperuser");
+    return (User) sessionFactory.getCurrentSession().get(User.class, username);
+    //return (User) sessionFactory.getCurrentSession().get(User.class, "mysuperuser");
   }
 
   @Transactional(readOnly = false)
